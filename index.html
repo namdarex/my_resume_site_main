@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="رزومه صادق حاجی‌زاده — توسعه‌دهنده و طراح وب">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>صادق حاجی‌زاده | رزومه</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="تغییر تم">
+        <i class="fa-solid fa-sun sun-icon"></i>
+        <i class="fa-solid fa-moon moon-icon"></i>
+    </button>
+
+    <button class="lang-toggle" id="langToggle" aria-label="Change Language">
+        <span class="lang-text" data-fa="EN" data-en="فا">EN</span>
+    </button>
+
+    <header class="navbar" id="navbar">
+        <nav class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-mark">
+                    <img src="profile.jpg" alt="صادق حاجی‌زاده" class="logo-img">
+                </span>
+                <span class="logo-text" data-fa="صادق حاجی‌زاده" data-en="Sadegh Hajizadeh">صادق حاجی‌زاده</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-fa="خانه" data-en="Home">خانه</a></li>
+                <li><a href="#about" class="nav-link" data-fa="درباره من" data-en="About">درباره من</a></li>
+                <li><a href="#experience" class="nav-link" data-fa="تجربیات" data-en="Experience">تجربیات</a></li>
+                <li><a href="#skills" class="nav-link" data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</a></li>
+                <li><a href="#education" class="nav-link" data-fa="تحصیلات" data-en="Education">تحصیلات</a></li>
+                <li><a href="#contact" class="nav-link" data-fa="تماس" data-en="Contact">تماس</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="منو">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-avatar reveal">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-circle">
+                        <img src="profile.jpg" alt="صادق حاجی‌زاده" class="avatar-img">
+                    </div>
+                </div>
+                <p class="hero-greeting reveal" data-fa="👋 سلام، من" data-en="👋 Hi, I'm">👋 سلام، من</p>
+                <h1 class="hero-name reveal" data-fa="صادق حاجی‌زاده" data-en="Sadegh Hajizadeh">صادق حاجی‌زاده</h1>
+                <h2 class="hero-title reveal">
+                    <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description reveal" data-fa="عاشق ساخت تجربه‌های دیجیتالی هستم که اوج خلاقیت رو نشون بدن. با کد، ایده‌ها رو به واقعیت تبدیل می‌کنم." data-en="I'm passionate about building digital experiences that showcase peak creativity. I turn ideas into reality through code.">
+                    عاشق ساخت تجربه‌های دیجیتالی هستم که <span class="highlight" data-fa="اوج خلاقیت" data-en="peak creativity">اوج خلاقیت</span> رو نشون بدن.
+                    با کد، ایده‌ها رو به واقعیت تبدیل می‌کنم.
+                </p>
+                <div class="hero-buttons reveal">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span data-fa="تماس با من" data-en="Contact Me">تماس با من</span>
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fa-solid fa-download"></i>
+                        <span data-fa="دانلود رزومه" data-en="Download CV">دانلود رزومه</span>
+                    </a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/sadegh-hz18" target="_blank" class="social-link" aria-label="گیت‌هاب"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="لینکدین"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://t.me/Namdarex" target="_blank" class="social-link" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="mailto:sadeghhajizadeh999@gmail.com" class="social-link" aria-label="ایمیل"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="اسکرول">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-fa="۰۱ — معرفی" data-en="01 — Introduction">۰۱ — معرفی</span>
+                    <h2 class="section-title" data-fa="درباره من" data-en="About Me">درباره من</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <h3 data-fa="سلام! من صادقم 👋" data-en="Hello! I'm Sadegh 👋">سلام! من صادقم 👋</h3>
+                        <p data-fa="یک توسعه‌دهنده‌ی پرانرژی و خلاق هستم که عاشق تکنولوژی و طراحی هستم. تخصص من ترکیب کد تمیز با تجربه‌ی کاربری عالی است تا محصولاتی بسازم که هم زیبا باشند و هم کاربردی." data-en="I'm an energetic and creative developer passionate about technology and design. My expertise is combining clean code with excellent user experience to build products that are both beautiful and functional.">
+                            یک توسعه‌دهنده‌ی پرانرژی و خلاق هستم که عاشق تکنولوژی و طراحی هستم.
+                            تخصص من ترکیب <strong>کد تمیز</strong> با <strong>تجربه‌ی کاربری عالی</strong> است
+                            تا محصولاتی بسازم که هم زیبا باشند و هم کاربردی.
+                        </p>
+                        <p data-fa="همیشه دنبال یادگیری چیزهای جدیدم و دوست دارم چالش‌های پیچیده رو به راه‌حل‌های ساده و موثر تبدیل کنم. با تیم‌ها به خوبی کار می‌کنم و به کیفیت کارم افتخار می‌کنم." data-en="I'm always eager to learn new things and love turning complex challenges into simple, effective solutions. I work well with teams and take pride in the quality of my work.">
+                            همیشه دنبال یادگیری چیزهای جدیدم و دوست دارم چالش‌های پیچیده رو به
+                            راه‌حل‌های ساده و موثر تبدیل کنم. با تیم‌ها به خوبی کار می‌کنم و
+                            به کیفیت کارم افتخار می‌کنم.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span data-fa="بندرعباس، ایران" data-en="Bandar Abbas, Iran">بندرعباس، ایران</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span data-fa="آماده‌ی همکاری" data-en="Open to Work">آماده‌ی همکاری</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-language"></i>
+                                <span data-fa="فارسی، انگلیسی" data-en="Persian, English">فارسی، انگلیسی</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats reveal">
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="5">۰</span>
+                            <span class="stat-label" data-fa="سال تجربه" data-en="Years Exp">سال تجربه</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="50">۰</span>
+                            <span class="stat-label" data-fa="پروژه موفق" data-en="Projects Done">پروژه موفق</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="30">۰</span>
+                            <span class="stat-label" data-fa="مشتری راضی" data-en="Happy Clients">مشتری راضی</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="3">۰</span>
+                            <span class="stat-label" data-fa="گواهی‌نامه" data-en="Certificates">گواهی‌نامه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-fa="۰۲ — مسیر شغلی" data-en="02 — Career Path">۰۲ — مسیر شغلی</span>
+                    <h2 class="section-title" data-fa="تجربیات کاری" data-en="Work Experience">تجربیات کاری</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date" data-fa="۱۴۰۳ — اکنون" data-en="2024 — Present">۱۴۰۳ — اکنون</span>
+                            <h3 data-fa="توسعه‌دهنده ارشد فرانت‌اند" data-en="Senior Frontend Developer">توسعه‌دهنده ارشد فرانت‌اند</h3>
+                            <h4 data-fa="شرکت فناوری دیجیتال" data-en="Digital Technology Co.">شرکت فناوری دیجیتال</h4>
+                            <p data-fa="رهبری تیم توسعه‌ی رابط کاربری، طراحی معماری فرانت‌اند، و بهینه‌سازی عملکرد اپلیکیشن‌های مقیاس‌پذیر." data-en="Leading the UI development team, designing frontend architecture, and optimizing performance of scalable applications.">رهبری تیم توسعه‌ی رابط کاربری، طراحی معماری فرانت‌اند، و بهینه‌سازی عملکرد اپلیکیشن‌های مقیاس‌پذیر.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag" data-fa="رهبری تیم" data-en="Team Lead">رهبری تیم</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date" data-fa="۱۴۰۱ — ۱۴۰۳" data-en="2022 — 2024">۱۴۰۱ — ۱۴۰۳</span>
+                            <h3 data-fa="توسعه‌دهنده‌ی فول‌استک" data-en="Full-Stack Developer">توسعه‌دهنده‌ی فول‌استک</h3>
+                            <h4 data-fa="استارتاپ هوشمند" data-en="Smart Startup">استارتاپ هوشمند</h4>
+                            <p data-fa="طراحی و پیاده‌سازی کامل ویژگی‌های محصول، از دیتابیس تا رابط کاربری، در یک محیط چابک." data-en="Full-stack design and implementation of product features, from database to UI, in an agile environment.">طراحی و پیاده‌سازی کامل ویژگی‌های محصول، از دیتابیس تا رابط کاربری، در یک محیط چابک.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date" data-fa="۱۳۹۹ — ۱۴۰۱" data-en="2020 — 2022">۱۳۹۹ — ۱۴۰۱</span>
+                            <h3 data-fa="توسعه‌دهنده‌ی وب" data-en="Web Developer">توسعه‌دهنده‌ی وب</h3>
+                            <h4 data-fa="آژانس دیجیتال" data-en="Digital Agency">آژانس دیجیتال</h4>
+                            <p data-fa="ساخت وب‌سایت‌های سفارشی برای مشتریان مختلف، با تمرکز بر طراحی واکنش‌گرا و سئو." data-en="Building custom websites for various clients, focusing on responsive design and SEO.">ساخت وب‌سایت‌های سفارشی برای مشتریان مختلف، با تمرکز بر طراحی واکنش‌گرا و سئو.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-fa="۰۳ — تخصص‌ها" data-en="03 — Expertise">۰۳ — تخصص‌ها</span>
+                    <h2 class="section-title" data-fa="مهارت‌های من" data-en="My Skills">مهارت‌های من</h2>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="skills-category reveal">
+                        <h3 data-fa="مهارت‌های فنی" data-en="Technical Skills"><i class="fa-solid fa-code"></i> <span data-fa="مهارت‌های فنی" data-en="Technical Skills">مهارت‌های فنی</span></h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-percent="95">
+                                <div class="skill-head">
+                                    <span>HTML5 & CSS3</span>
+                                    <span class="skill-percent" data-fa="۹۵٪" data-en="95%">۹۵٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                            <div class="skill-item" data-percent="90">
+                                <div class="skill-head">
+                                    <span>JavaScript</span>
+                                    <span class="skill-percent" data-fa="۹۰٪" data-en="90%">۹۰٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                            <div class="skill-item" data-percent="88">
+                                <div class="skill-head">
+                                    <span>React / Vue</span>
+                                    <span class="skill-percent" data-fa="۸۸٪" data-en="88%">۸۸٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                            <div class="skill-item" data-percent="82">
+                                <div class="skill-head">
+                                    <span>Node.js</span>
+                                    <span class="skill-percent" data-fa="۸۲٪" data-en="82%">۸۲٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                            <div class="skill-item" data-percent="78">
+                                <div class="skill-head">
+                                    <span data-fa="پایگاه داده" data-en="Databases">پایگاه داده</span>
+                                    <span class="skill-percent" data-fa="۷۸٪" data-en="78%">۷۸٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                            <div class="skill-item" data-percent="85">
+                                <div class="skill-head">
+                                    <span>Python</span>
+                                    <span class="skill-percent" data-fa="۸۵٪" data-en="85%">۸۵٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                            <div class="skill-item" data-percent="82">
+                                <div class="skill-head">
+                                    <span>Dart & Flutter</span>
+                                    <span class="skill-percent" data-fa="۸۲٪" data-en="82%">۸۲٪</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category reveal">
+                        <h3><i class="fa-solid fa-palette"></i> <span data-fa="مهارت‌های نرم" data-en="Soft Skills">مهارت‌های نرم</span></h3>
+                        <div class="soft-skills">
+                            <div class="soft-skill">
+                                <div class="soft-circle" data-percent="90">
+                                    <span data-fa="۹۰٪" data-en="90%">۹۰٪</span>
+                                </div>
+                                <p data-fa="حل مسئله" data-en="Problem Solving">حل مسئله</p>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-circle" data-percent="85">
+                                    <span data-fa="۸۵٪" data-en="85%">۸۵٪</span>
+                                </div>
+                                <p data-fa="کار تیمی" data-en="Teamwork">کار تیمی</p>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-circle" data-percent="88">
+                                    <span data-fa="۸۸٪" data-en="88%">۸۸٪</span>
+                                </div>
+                                <p data-fa="خلاقیت" data-en="Creativity">خلاقیت</p>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-circle" data-percent="92">
+                                    <span data-fa="۹۲٪" data-en="92%">۹۲٪</span>
+                                </div>
+                                <p data-fa="ارتباطات" data-en="Communication">ارتباطات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-fa="۰۴ — تحصیلات" data-en="04 — Education">۰۴ — تحصیلات</span>
+                    <h2 class="section-title" data-fa="تحصیلات و گواهی‌نامه‌ها" data-en="Education & Certificates">تحصیلات و گواهی‌نامه‌ها</h2>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-card reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="edu-year" data-fa="۱۴۰۲ — اکنون" data-en="2023 — Present">۱۴۰۲ — اکنون</span>
+                        <h3 data-fa="فوق دیپلم کامپیوتر" data-en="Associate Degree in Computer Science">فوق دیپلم کامپیوتر</h3>
+                        <h4 data-fa="دانشگاه هرمزگان" data-en="Hormozgan University">دانشگاه هرمزگان</h4>
+                        <p data-fa="دانشجوی فعال در رشته‌ی کامپیوتر با علاقه‌مندی به برنامه‌نویسی وب و توسعه‌ی نرم‌افزار." data-en="Active student in Computer Science with a passion for web programming and software development.">دانشجوی فعال در رشته‌ی کامپیوتر با علاقه‌مندی به برنامه‌نویسی وب و توسعه‌ی نرم‌افزار.</p>
+                    </div>
+                    <div class="edu-card reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <span class="edu-year" data-fa="۱۴۰۳" data-en="2024">۱۴۰۳</span>
+                        <h3 data-fa="گواهی‌نامه فرانت‌اند پیشرفته" data-en="Advanced Frontend Certificate">گواهی‌نامه فرانت‌اند پیشرفته</h3>
+                        <h4>Meta / Coursera</h4>
+                        <p data-fa="دوره‌ی تخصصی توسعه‌ی فرانت‌اند مدرن با React، TypeScript و بهترین الگوهای صنعت." data-en="Specialized course on modern frontend development with React, TypeScript, and industry best practices.">دوره‌ی تخصصی توسعه‌ی فرانت‌اند مدرن با React، TypeScript و بهترین الگوهای صنعت.</p>
+                    </div>
+                    <div class="edu-card reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+                        <span class="edu-year" data-fa="۱۴۰۲" data-en="2023">۱۴۰۲</span>
+                        <h3 data-fa="گواهی‌نامه UX/UI طراحی" data-en="UX/UI Design Certificate">گواهی‌نامه UX/UI طراحی</h3>
+                        <h4>Google</h4>
+                        <p data-fa="طراحی تجربه‌ی کاربری و رابط کاربری، تحقیقات کاربر و نمونه‌سازی با Figma." data-en="User experience and interface design, user research, and prototyping with Figma.">طراحی تجربه‌ی کاربری و رابط کاربری، تحقیقات کاربر و نمونه‌سازی با Figma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-fa="۰۵ — ارتباط" data-en="05 — Contact">۰۵ — ارتباط</span>
+                    <h2 class="section-title" data-fa="بیایید همکاری کنیم" data-en="Let's Work Together">بیایید همکاری کنیم</h2>
+                    <p class="section-subtitle" data-fa="آماده‌ی پروژه‌های جدید هستم 🚀" data-en="Ready for new projects 🚀">آماده‌ی پروژه‌های جدید هستم 🚀</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <strong data-fa="ایمیل" data-en="Email">ایمیل</strong>
+                                <a href="mailto:sadeghhajizadeh999@gmail.com">sadeghhajizadeh999@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <strong data-fa="تلفن" data-en="Phone">تلفن</strong>
+                                <a href="tel:+98900000000">۰۹۰۰۰۰۰۰۰۰۰</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <strong data-fa="موقعیت" data-en="Location">موقعیت</strong>
+                                <span data-fa="بندرعباس، ایران" data-en="Bandar Abbas, Iran">بندرعباس، ایران</span>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="https://github.com/sadegh-hz18" target="_blank" class="social-link" aria-label="گیت‌هاب"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="لینکدین"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://t.me/Namdarex" target="_blank" class="social-link" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name" data-fa="نام و نام خانوادگی" data-en="Full Name">نام و نام خانوادگی</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email" data-fa="ایمیل" data-en="Email">ایمیل</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject" data-fa="موضوع" data-en="Subject">موضوع</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message" data-fa="پیام شما" data-en="Your Message">پیام شما</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-fa="ارسال پیام" data-en="Send Message">ارسال پیام</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-mark">
+                        <img src="profile.jpg" alt="صادق حاجی‌زاده" class="logo-img">
+                    </span>
+                    <span class="logo-text" data-fa="صادق حاجی‌زاده" data-en="Sadegh Hajizadeh">صادق حاجی‌زاده</span>
+                </a>
+                <p class="footer-desc" data-fa="توسعه‌دهنده‌ی وب و طراح رابط کاربری — آماده‌ی همکاری پروژه‌های جذاب." data-en="Web Developer & UI Designer — Ready for exciting projects.">توسعه‌دهنده‌ی وب و طراح رابط کاربری — آماده‌ی همکاری پروژه‌های جذاب.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-fa="دسترسی سریع" data-en="Quick Links">دسترسی سریع</h4>
+                <ul>
+                    <li><a href="#about" data-fa="درباره من" data-en="About">درباره من</a></li>
+                    <li><a href="#experience" data-fa="تجربیات" data-en="Experience">تجربیات</a></li>
+                    <li><a href="#skills" data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</a></li>
+                    <li><a href="#contact" data-fa="تماس" data-en="Contact">تماس</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4 data-fa="شبکه‌های اجتماعی" data-en="Socials">شبکه‌های اجتماعی</h4>
+                <div class="footer-socials">
+                    <a href="https://github.com/sadegh-hz18" target="_blank" class="social-link" aria-label="گیت‌هاب"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://t.me/Namdarex" target="_blank" class="social-link" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="mailto:sadeghhajizadeh999@gmail.com" class="social-link" aria-label="ایمیل"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-fa="© ۱۴۰۵ صادق حاجی‌زاده" data-en="© 2025 Sadegh Hajizadeh">© ۱۴۰۵ صادق حاجی‌زاده</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
